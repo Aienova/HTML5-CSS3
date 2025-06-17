@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Déclare que le document est en HTML5 -->
+
+<html lang="fr">
+<!-- Début du document HTML avec la langue définie sur le français -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Définit l'encodage des caractères en UTF-8 (standard universel) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Permet le responsive design sur mobile (adapte l'affichage à la taille de l'écran) -->
+
+  <title>Mon Blog Personnel</title>
+  <!-- Titre de l’onglet du navigateur -->
+
+  <link rel="stylesheet" href="styles/html5.css">
+  <!-- Lien vers une feuille de style CSS externe (à personnaliser si besoin) -->
+</head>
+
+<body>
+<!-- Corps de la page HTML, ce que l'utilisateur voit -->
+
+  <header>
+    <!-- En-tête principale du site (souvent titre, logo, menu) -->
+    <h1>Balise HTML5</h1>
+    <!-- Titre principal visible sur la page -->
+
+    <!---  Année - Mois -  Jours  Heure:minutes:secondes  -->
+    
+    <p><time datetime="2025-06-17 09:25:00">Mardi 17 juin 2025 09:26</time></p>
+    <!-- Affiche une date au format humain, avec une valeur machine lisible (datetime) -->
+  </header>
+
+  <main>
+
+    <!-- Contenu principal de la page, unique (1 seul <main> par page) -->
+    
+    <article>
+      <!-- Contenu autonome : un article de blog ou une actualité -->
+      <h2>Mon premier article</h2>
+      <!-- Titre de niveau 2 pour cette section -->
+
+      <p>Voici le contenu principal de l'article. Il parle de HTML5 et de ses balises modernes.</p>
+      <!-- Paragraphe de contenu principal -->
+
+      <figure>
+        <!-- Conteneur pour du contenu visuel avec légende -->
+        <img src="https://m.media-amazon.com/images/I/71hj9sL2ZqL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Exemple d’image">
+        <!-- Image illustrative avec texte alternatif (important pour l'accessibilité) -->
+
+        <figcaption>Tour PC à vendre</figcaption>
+        <!-- Légende de l’image -->
+      </figure>
+
+      <p>Voici une phrase avec un <mark>terme mis en évidence</mark>.</p>
+      <!-- Mise en surbrillance d'un terme important avec la balise <mark> -->
+
+
+        <p>Comment apprendre le HTML5</p>
+        <details>
+
+                    <div>
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="Exemple d’image">   
+                      <p>Il faut lire la doc HTML5 et s'entrainer à créer des pages HTML</p>
+                    
+                    </div>
+
+          <summary>En savoir plus ..</summary>
+
+
+        </details>
+
+      <p>Progression de lecture :</p>
+      <progress value="50" max="200"></progress>
+      <!-- Barre de progression à 70% -->
+
+      <p>Niveau de satisfaction :</p>
+      <meter value="1">100%</meter>
+      <!-- Indicateur de niveau dans une plage (type jauge) -->
+
+      <form method="GET">
+        <!-- Formulaire utilisateur -->
+        <label for="langue">Langue préférée :</label>
+        <!-- Étiquette liée à l’input ci-dessous -->
+
+        <input list="langues" id="langue" name="langue">
+        <!-- Champ avec saisie assistée grâce au datalist -->
+
+        <datalist id="langues">
+          <!-- Liste de choix prédéfinis -->
+          <option value="Français">
+          <option value="Anglais">
+          <option value="Espagnol">
+        </datalist>
+
+        <br><br>
+
+        <label>Résultat du test : </label>
+        <output id="result">42</output>
+        <!-- Affichage d’un résultat (calculé ou statique ici) -->
+      </form>
+
+      <p>Voici un graphique simple généré avec <code>&lt;canvas&gt;</code> :</p>
+      <canvas id="monCanvas" width="200" height="200" style="border:1px solid #ccc;"></canvas>
+      <!-- Zone de dessin HTML5, ici utilisée pour afficher un carré vert (voir script en bas) -->
+    </article>
+
+    <aside>
+      <!-- Contenu secondaire (ex : infos supplémentaires, pub, biographie, etc.) -->
+      <h3>À propos de moi</h3>
+      <p>Je suis passionné par le web et les nouvelles technologies.</p>
+
+      <audio controls>
+        <!-- Lecteur audio intégré -->
+        <source src="media/UEFA Champions League Anthem.mp3" type="audio/mpeg">
+        <!-- Source audio (à remplacer par un vrai fichier) -->
+        Votre navigateur ne supporte pas l'audio.
+        <!-- Message de secours si le navigateur ne supporte pas l’audio -->
+      </audio>
+
+      <video width="100%" controls poster="https://media.culturepsg.com/image/news/resume_psg_inter_champions_league_310525.jpg">
+        <!-- Lecteur vidéo intégré avec une image d’aperçu (poster) -->
+        <source src="media/psg.mp4" type="video/mp4">
+        <!-- Source vidéo (à remplacer par un vrai fichier) -->
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </aside>
+  </main>
+
+  <footer>
+    <!-- Pied de page du site -->
+    <p>&copy; 2025 - Mon Blog. Tous droits réservés.</p>
+
+    <dialog open>
+      <!-- Fenêtre de dialogue native (modale HTML5) -->
+      <p>Ceci est un exemple de boîte de dialogue native.</p>
+    </dialog>
+  </footer>
+
+  <template id="messageTemplate">
+    <!-- Modèle de contenu HTML invisible, réutilisable avec JavaScript -->
+    <p>Message préparé pour plus tard.</p>
+  </template>
+
+  <script>
+    // Petit dessin sur le canvas
+    const canvas = document.getElementById("monCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "green"; // Couleur de remplissage
+    ctx.fillRect(50, 50, 100, 100); // Dessine un carré vert (x=50, y=50, largeur=100, hauteur=100)
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    section{
+
+        padding-top: 2em;
+        padding-bottom:2em;
+    }
+    header, nav, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+    }
+    nav {
+      background: #eee;
+    }
+    main {
+      display: flex;
+      gap: 20px;
+    }
+    article {
+      flex: 3;
+      background: #f9f9f9;
+    }
+    aside {
+      flex: 1;
+      background: #f0f0f0;
+    }
+    figure {
+      margin: 0;
+    }
+    .color-box {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
