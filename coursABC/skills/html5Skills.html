@@ -1,0 +1,209 @@
+
+<!-- TAPEZ LA COMMANDE ! pour générer le squelette de la page HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compétences attendus pour HTML5">
+    <title>La base de HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
+        section {
+            margin-top: 10em;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>La base de HTML5</h1>
+                <!-- Haut de page -->
+                 <nav>
+                     <ul>
+                         <li><a href="#introduction">Introduction du HTML5</a></li>
+                         <li><a href="#structure">Structure de base</a></li>
+                         <li><a href="#contenu">Contenu, Texte, image video</a></li>
+                         <li><a href="#listes">Les listes</a></li>
+                         <li><a href="#tableaux">Les tableaux</a></li>
+                         <li><a href="#formulaires">Les formulaires</a></li>
+                         <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">Toutes les balises HTML</a></li>
+                     </ul>
+                 </nav>
+                 
+    </header>
+
+    <main>
+        <!-- Contenu principal à diviser avec des sections -->
+         <section id="introduction">
+             <h2>Introduction à HTML5</h2>
+             <p>Le cours de HTML5 pour comprendre les bases du langage et les balises essentielles.</p>
+
+         </section>
+
+         <section id="structure">
+             <h2>Comment structurer son HTML</h2>
+             <p>Il est important de bien structurer son HTML pour le rendre accessible, facile à lire et conforme au SEO.</p>
+
+             <ul>
+                 <li>Ajouter votre meta description, meta viewport pour le responsive et votre title</li>
+                 <li>Dans le <code>&lt;body&gt;</code> découper votre contenu en 3 parties : <code>&lt;HEADER&gt;, &lt;MAIN&gt;, &lt;FOOTER&gt;</code></li>
+                 <li>Dans le <code>&lt;MAIN&gt;</code>, utiliser des sections pour chaque partie de votre contenu</li>
+                 <li>Attention à un bien fermer les balises</li>
+            </ul>
+
+         </section>
+
+         <section id="contenu">
+
+            <article>
+                <h2>Les média en HTML5</h2>
+                <p>Pour les media utilisez les balises <code>&lt;IMG&gt;</code> & <code>&lt;VIDEO&gt;</code>, pour les textes balises <code>&lt;P&gt;</code>, <code>&lt;SPAN&gt;</code> ou <code>&lt;STRONG&gt;</code>, les titres, les balises <code>&lt;H1&gt;</code>,<code>&lt;H2&gt;</code>,<code>&lt;H3&gt;</code>,<code>&lt;H4&gt;</code></p>
+            </article>
+
+            <article>
+                <h3>Vidéo</h3>
+                <p>Pour intégrer une vidéo, utilisez la balise <code>&lt;video&gt;</code> avec les attributs <code>controls</code>, <code>autoplay</code>, et <code>muted</code>.</p>
+                <video controls autoplay muted loop>
+                    <source src="video-game.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <ul>
+                    <li><h3>Attributs de la balise <code>&lt;video&gt;</code> :</h3></li>
+                    <li><code>controls</code> : Affiche les contrôles de lecture</li>
+                    <li><code>autoplay</code> : Démarre la vidéo automatiquement</li>
+                    <li><code>muted</code> : Coupe le son de la vidéo</li>
+                    <li><code>loop</code> : Rejoue la vidéo en boucle</li>
+                </ul>
+
+                <p><strong>Note :</strong> Assurez-vous que le fichier vidéo est au format MP4 pour une compatibilité maximale avec les navigateurs.</p>
+                <p> Vous pouvez aussi intégrer des vidéos YouTube en utilisant la balise <code>&lt;iframe&gt;</code>. Allez votre video Youtube et cliquer sur "Partager", puis sur "Intégrer". Copiez le code fourni et collez-le dans votre page.</p>
+
+            </article>
+
+            <article>
+                <h3>Image</h3>
+                <p>Pour intégrer une image, utilisez la balise <code>&lt;img&gt;</code> avec l'attribut <code>src</code> pour spécifier le chemin de l'image.</p>
+                <img src="death-stranding.png" alt="Hideo Kojima's Death tranding 2">
+                <ul>
+                    <li><h3>Attributs de la balise <code>&lt;img&gt;</code> :</h3></li>
+                    <li><code>src</code> : Chemin de l'image</li>
+                    <li><code>alt</code> : Texte alternatif pour l'image</li>
+                </ul>
+
+                <p><strong>Note :</strong> Si vous faites un site pour la production que ce soit personnel ou professionnel veuillez à faire attention à la licence des vos images</p>
+                <p> Pour utiliser des images libres de droits vous avez : <a href="https://pixabay.com">Pixabay</a>, <a href="https://unsplash.com">Unsplash</a>, <a href="https://www.pexels.com">Pexels</a></p>
+
+            </article>
+
+            <article>
+                <h3>Titres</h3>
+                <p>Utilisez les balises de titre <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> pour structurer votre contenu.</p>
+                <h1><code>&lt;h1&gt;</code>Titre principal</h1>
+                <h2><code>&lt;h2&gt;</code>Sous-titre</h2>
+                <h3><code>&lt;h3&gt;</code>Titre de section</h3>
+                <h4><code>&lt;h4&gt;</code>Titre de sous-section</h4>
+                <h5><code>&lt;h5&gt;</code>Titre de niveau 5</h5>
+            </article>
+
+            <article>
+                <h3>Texte</h3>
+                <p>Utilisez les balises <code>&lt;p&gt;</code> pour les paragraphes, <code>&lt;span&gt;</code> pour le texte en ligne, et <code>&lt;strong&gt;</code> pour mettre en évidence du texte.</p>
+                <p><code>&lt;p&gt;</code>Ceci est un paragraphe de texte.</p>
+                <span><code>&lt;span&gt;</code>Ceci est un <strong style="color: red;">texte</strong> en ligne.</span>
+                <strong><code>&lt;strong&gt;</code>Ceci est du <strong style="color: red;">texte</strong> en gras.</strong>
+            </article>
+                
+
+         </section>
+
+         <section id="listes">
+             <h2>Les listes</h2>
+             <p>Utilisez les balises <code>&lt;ul&gt;</code> pour les listes non ordonnées et <code>&lt;ol&gt;</code> pour les listes ordonnées.</p>
+             <ul>
+                 <li>Élément de liste non ordonnée</li>
+                 <li>Un autre élément de liste non ordonnée</li>
+             </ul>
+             <ol>
+                 <li>Élément de liste ordonnée</li>
+                 <li>Un autre élément de liste ordonnée</li>
+             </ol>
+            </section>
+
+            <section id="tableaux">
+                <h2>Les tableaux</h2>
+                <p>Utilisez la balise <code>&lt;table&gt;</code> pour créer des tableaux, avec les balises <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, et <code>&lt;tr&gt;</code> pour les lignes.</p>
+                <table>
+                    <!-- Titre du tableau -->
+                        <thead>
+                            <tr> <!-- Titres des colonnes -->
+                                <th>Balise</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <!-- Corps du tableau -->
+                        <tbody>
+                            <tr><!-- Données des colonnes , TR : ligne du tableau-->
+                                <td>video</td>
+                                <td>Pour intégrer des vidéos</td>
+                            </tr>
+                            <tr>
+                                <td>audio</td>
+                                <td>Pour intégrer des fichiers audio</td>
+                            </tr>
+                            <tr>
+                                <td>img</td>
+                                <td>Pour intégrer des images</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </section>
+
+            <section id="link">
+                <h2>Liens & ancrages</h2>
+                <p>Utilisez la balise <code>&lt;a&gt;</code> pour créer des liens hypertextes. L'attribut <code>href</code> spécifie l'URL du lien.</p>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">Documentation HTML5</a>
+                <p>Le lien s'ouvre dans un nouvel onglet grâce à l'attribut <code>target="_blank"</code>.</p>
+
+                <p>Pour créer des liens vers des sections de la même page, utilisez des ancrages avec l'attribut <code>id</code>.</p>
+                <p>Exemple de lien vers la section <a href="#introduction">Introduction à HTML5</a>.</p>
+                <p>Pour créer un lien vers une adresse email, utilisez le format <code>mailto:</code> dans l'attribut <code>href</code>.</p>
+                <p>Exemple : <a href="mailto:exemple@domaine.com">Envoyer un email</a>.</p>
+                
+            </section>
+
+            <section id="formulaires">
+                <h2>Les formulaires</h2>
+                <p>Utilisez la balise <code>&lt;form&gt;</code> pour créer des formulaires, avec les balises <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, et <code>&lt;button&gt;</code>.</p>
+                <form method="get">
+                    <p><label for="name">Nom :<br></label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom" required></p>
+                    <p><label for="email">Email :<br></label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required></p>
+                    <p><label for="message">Message :<br></label>
+                    <textarea id="message" name="message" placeholder="Entrez votre message" required></textarea></p>
+                    <button type="submit">Envoyer</button>
+                </form>
+
+            </section>
+
+
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+         <p>&copy;copyright Centre de réadaptation de Mulhouse - 2025</p>
+    </footer>
+
+</body>
+</html>
