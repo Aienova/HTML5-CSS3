@@ -7,27 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compétences attendus pour HTML5">
     <title>La base de HTML5</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-
-        section {
-            margin-top: 10em;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+
+
+    <header class="center">
+            <div id="title" class="maClasse"><h1><h1>La base de HTML5 & CSS3</h1></h1></div>
     
-    <header>
-        <h1>La base de HTML5</h1>
+        
                 <!-- Haut de page -->
                  <nav>
                      <ul>
@@ -44,14 +32,28 @@
     </header>
 
     <main>
+
+        <section id="banner" class="center">
+
+                <h2>Tout savoir sur le HTML5 & CSS3</h2>
+
+        </section>
+
+
+
         <!-- Contenu principal à diviser avec des sections -->
-         <section id="introduction">
+         <section class="center" id="introduction">
+            <div>
              <h2>Introduction à HTML5</h2>
              <p>Le cours de HTML5 pour comprendre les bases du langage et les balises essentielles.</p>
-
+            </div>
          </section>
 
-         <section id="structure">
+         <section class="center" id="structure">
+            <div>
+            <article>
+                <h2>Structure de base d'une page HTML</h2>
+                <p>Une page HTML commence par la déclaration <code>&lt;!DOCTYPE html&gt;</code>, suivie de la balise <code>&lt;html&gt;</code> qui contient les sections <code>&lt;head&gt;</code> et <code>&lt;body&gt;</code>.</p>
              <h2>Comment structurer son HTML</h2>
              <p>Il est important de bien structurer son HTML pour le rendre accessible, facile à lire et conforme au SEO.</p>
 
@@ -61,11 +63,12 @@
                  <li>Dans le <code>&lt;MAIN&gt;</code>, utiliser des sections pour chaque partie de votre contenu</li>
                  <li>Attention à un bien fermer les balises</li>
             </ul>
-
+            </article>
+            </div>
          </section>
 
-         <section id="contenu">
-
+         <section class="center" id="contenu">
+            <div>
             <article>
                 <h2>Les média en HTML5</h2>
                 <p>Pour les media utilisez les balises <code>&lt;IMG&gt;</code> & <code>&lt;VIDEO&gt;</code>, pour les textes balises <code>&lt;P&gt;</code>, <code>&lt;SPAN&gt;</code> ou <code>&lt;STRONG&gt;</code>, les titres, les balises <code>&lt;H1&gt;</code>,<code>&lt;H2&gt;</code>,<code>&lt;H3&gt;</code>,<code>&lt;H4&gt;</code></p>
@@ -75,7 +78,7 @@
                 <h3>Vidéo</h3>
                 <p>Pour intégrer une vidéo, utilisez la balise <code>&lt;video&gt;</code> avec les attributs <code>controls</code>, <code>autoplay</code>, et <code>muted</code>.</p>
                 <video controls autoplay muted loop>
-                    <source src="video-game.mp4" type="video/mp4">
+                    <source src="./media/video-game.mp4" type="video/mp4">
                     Votre navigateur ne supporte pas la vidéo.
                 </video>
                 <ul>
@@ -94,7 +97,7 @@
             <article>
                 <h3>Image</h3>
                 <p>Pour intégrer une image, utilisez la balise <code>&lt;img&gt;</code> avec l'attribut <code>src</code> pour spécifier le chemin de l'image.</p>
-                <img src="death-stranding.png" alt="Hideo Kojima's Death tranding 2">
+                <img src="./media/death-stranding.png" alt="Hideo Kojima's Death tranding 2">
                 <ul>
                     <li><h3>Attributs de la balise <code>&lt;img&gt;</code> :</h3></li>
                     <li><code>src</code> : Chemin de l'image</li>
@@ -123,11 +126,12 @@
                 <span><code>&lt;span&gt;</code>Ceci est un <strong style="color: red;">texte</strong> en ligne.</span>
                 <strong><code>&lt;strong&gt;</code>Ceci est du <strong style="color: red;">texte</strong> en gras.</strong>
             </article>
-                
+        </div>
 
          </section>
 
-         <section id="listes">
+         <section class="center" id="listes">
+            <div>
              <h2>Les listes</h2>
              <p>Utilisez les balises <code>&lt;ul&gt;</code> pour les listes non ordonnées et <code>&lt;ol&gt;</code> pour les listes ordonnées.</p>
              <ul>
@@ -139,8 +143,10 @@
                  <li>Un autre élément de liste ordonnée</li>
              </ol>
             </section>
+        </div>
 
-            <section id="tableaux">
+            <section class="center" id="tableaux">
+                <div>
                 <h2>Les tableaux</h2>
                 <p>Utilisez la balise <code>&lt;table&gt;</code> pour créer des tableaux, avec les balises <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, et <code>&lt;tr&gt;</code> pour les lignes.</p>
                 <table>
@@ -167,22 +173,28 @@
                             </tr>
                         </tbody>
                 </table>
+            </div>
             </section>
 
-            <section id="link">
+            <section class="center" id="link">
+                <div>
                 <h2>Liens & ancrages</h2>
                 <p>Utilisez la balise <code>&lt;a&gt;</code> pour créer des liens hypertextes. L'attribut <code>href</code> spécifie l'URL du lien.</p>
                 <a href="https://www.w3schools.com/html/default.asp" target="_blank">Documentation HTML5</a>
                 <p>Le lien s'ouvre dans un nouvel onglet grâce à l'attribut <code>target="_blank"</code>.</p>
 
+                </div>
+
+                <div>
                 <p>Pour créer des liens vers des sections de la même page, utilisez des ancrages avec l'attribut <code>id</code>.</p>
                 <p>Exemple de lien vers la section <a href="#introduction">Introduction à HTML5</a>.</p>
                 <p>Pour créer un lien vers une adresse email, utilisez le format <code>mailto:</code> dans l'attribut <code>href</code>.</p>
                 <p>Exemple : <a href="mailto:exemple@domaine.com">Envoyer un email</a>.</p>
-                
+                </article>
             </section>
 
-            <section id="formulaires">
+            <section class="center" id="formulaires" style="margin:auto; width: 50%; background-color: red;">
+                <div>
                 <h2>Les formulaires</h2>
                 <p>Utilisez la balise <code>&lt;form&gt;</code> pour créer des formulaires, avec les balises <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, et <code>&lt;button&gt;</code>.</p>
                 <form method="get">
@@ -194,6 +206,7 @@
                     <textarea id="message" name="message" placeholder="Entrez votre message" required></textarea></p>
                     <button type="submit">Envoyer</button>
                 </form>
+                </div>
 
             </section>
 
